@@ -9,5 +9,5 @@ Route::get('/', function () {
     });
 
 Route::get('/about', function () {
-    return 'Hello! This is About page.';
+    return view('about');
 });
