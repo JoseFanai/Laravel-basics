@@ -10,26 +10,9 @@
 <body style="font-family: Arial, Helvetica, sans-serif; padding: 20px;">
     <h1>Name of Students:</h1>
 
-    <ul>
-        @foreach ($students as $student )
-        <li>
-            <strong> {{ $student->name }}</strong> (Course: {{ $student->course }})
-        </li>
-        @endforeach
-    </ul>
-
-    <button style="padding:10px;border-radius: 10px;border:none;background-color:aquamarine">
-        <a href="http://127.0.0.1:8000/students/create" style="color:black;text-decoration:none; ">
-            INPUT user
-        </a>
-    </button>
-    <button style="padding:10px;border-radius: 10px;border:none;background-color:aquamarine">
-        <a href="http://127.0.0.1:8000/students/list" style="color:black;text-decoration:none; ">
-            DELETE user
-        </a>
-    </button>
-
-    <!-- @foreach($students as $student)
+    
+    
+    @foreach($students as $student)
     <li style="margin-bottom: 15px; font-size: 18px;">
         <strong>{{ $student->name }}</strong> (Course: {{ $student->course }})
 
@@ -41,7 +24,7 @@
         </form>
 
     </li>
-    @endforeach -->
+    @endforeach
 </body>
 
 </html>
